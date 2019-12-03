@@ -132,7 +132,7 @@
 					"enabled": true,
 					"type": "dynamic",
 					"mass": 1,
-					"linearDamping": 0,
+					"linearDamping": 0.25,
 					"angularDamping": 0,
 					"linearFactor": [1, 1, 1],
 					"angularFactor": [1, 1, 1],
