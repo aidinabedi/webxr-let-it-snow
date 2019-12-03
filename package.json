@@ -1,5 +1,5 @@
 {
-  "name": "webxr-make-it-rain",
+  "name": "webxr-let-it-snow",
   "version": "1.0.0",
   "scripts": {
     "build": "browserify index.ts -p [ tsify ] > bundle.js"
