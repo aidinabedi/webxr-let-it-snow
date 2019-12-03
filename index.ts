@@ -190,12 +190,12 @@ function onRequestSession() {
 }
 
 function onTouchStart() {
-    let entity = app.root.findOne(node => node.name === 'MakeItRain') as pc.Entity;
+    let entity = app.root.findOne(node => node.name === 'LetItSnow') as pc.Entity;
     entity.enabled = true;
 }
 
 function onTouchEnd() {
-    let entity = app.root.findOne(node => node.name === 'MakeItRain') as pc.Entity;
+    let entity = app.root.findOne(node => node.name === 'LetItSnow') as pc.Entity;
     entity.enabled = false;
 }
 

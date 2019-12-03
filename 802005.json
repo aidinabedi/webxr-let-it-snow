@@ -65,7 +65,7 @@
 			"children": ["7c0e3692-d331-11e9-97ae-026349a27a7c", "9ed4f334-7d71-4bb2-9cef-07fe188a1a69", "36c6993b-3cfb-4f97-a19c-2114bc9d0df1"]
 		},
 		"b7935b75-b474-4334-9b00-6376a19e539b": {
-			"name": "MakeItRain",
+			"name": "LetItSnow",
 			"tags": [],
 			"enabled": false,
 			"resource_id": "b7935b75-b474-4334-9b00-6376a19e539b",
@@ -77,14 +77,14 @@
 			"components": {
 				"script": {
 					"enabled": true,
-					"order": ["makeItRain"],
+					"order": ["letItSnow"],
 					"scripts": {
-						"makeItRain": {
+						"letItSnow": {
 							"enabled": true,
 							"attributes": {
-								"emitRate": 20,
-								"originalBill": "7f0ef90e-6a27-4795-a084-59303c085aec",
-								"maxBills": 100
+								"originalEntity": "7f0ef90e-6a27-4795-a084-59303c085aec",
+								"maxEntities": 100,
+								"emitRate": 5
 							}
 						}
 					}
@@ -92,21 +92,21 @@
 			}
 		},
 		"7f0ef90e-6a27-4795-a084-59303c085aec": {
-			"name": "1DollarBill",
+			"name": "Snowball",
 			"tags": [],
-			"enabled": true,
+			"enabled": false,
 			"resource_id": "7f0ef90e-6a27-4795-a084-59303c085aec",
 			"parent": "b7935b75-b474-4334-9b00-6376a19e539b",
 			"children": [],
 			"position": [0, 0, 0],
 			"rotation": [0, 0, 0],
-			"scale": [1, 1, 1],
+			"scale": [0.1, 0.1, 0.1],
 			"components": {
 				"model": {
 					"enabled": true,
-					"type": "asset",
+					"type": "sphere",
 					"asset": 23041193,
-					"materialAsset": null,
+					"materialAsset": 23318088,
 					"castShadows": true,
 					"castShadowsLightmap": true,
 					"receiveShadows": true,
@@ -121,15 +121,15 @@
 				},
 				"collision": {
 					"enabled": true,
-					"type": "box",
+					"type": "sphere",
 					"halfExtents": [0.035, 0.005, 0.08],
-					"radius": 0.5,
+					"radius": 0.05,
 					"axis": 1,
 					"height": 2,
 					"asset": null
 				},
 				"rigidbody": {
-					"enabled": false,
+					"enabled": true,
 					"type": "dynamic",
 					"mass": 1,
 					"linearDamping": 0,
@@ -148,7 +148,7 @@
 			"resource_id": "9ed4f334-7d71-4bb2-9cef-07fe188a1a69",
 			"parent": "7c0e3691-d331-11e9-97ae-026349a27a7c",
 			"children": [],
-			"position": [0, -0.5, 0],
+			"position": [0, -2.254055305743723, 0],
 			"rotation": [0, 0, 0],
 			"scale": [1000, 1, 1000],
 			"components": {
